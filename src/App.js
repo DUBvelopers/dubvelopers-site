@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home";
 import Team from "./pages/Team/Team";
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
