@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import Footer from "../Footer/Footer";
 import "./Home.css";
 
 const Home = () => {
@@ -83,6 +84,8 @@ const Home = () => {
                     </Col>
                 </Row>
             </section>
+
+            <Footer/>
         </>
     );
 }

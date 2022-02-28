@@ -1,0 +1,18 @@
+.footer {
+    background-color: #FBF7ED;
+    padding: 10vh 10vw;
+    text-align: right;
+}
+
+.footer * {
+    color: #1A1B1F;
+}
+
+.socials {
+    display: inline-flex;
+}
+
+.socials a {
+    margin-left: 30px;
+    font-size: 20px;
+}
