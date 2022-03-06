@@ -4,31 +4,46 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-
-const teamMembers = ["Quan Huie", "Alaina Olson", "Anthony Luong", "Renee Chien", "Osiris Cruz",
-    "Nancy Le", "Eric Xiao", "Alan Gonzalez", "Atharva Kashyap", "Generous Yeh"];
+import useGoogleSheets from 'use-google-sheets';
+// require('dotenv').config();
 
 const Team = () => {
+    const { data, loading, error } = useGoogleSheets({
+        apiKey: process.env.REACT_APP_API_KEY,
+        sheetId: process.env.REACT_APP_SHEET_ID,
+        sheetsNames: ['Team'],
+    });
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error!</div>;
+    }
+
+    const teamMembers = data[0].data;
+    console.log(teamMembers);
+
     return (
         <div style={{ textAlign: "center" }}>
             <h1>Our Team</h1>
-            {teamMembers.map((name, index) => (
+            {teamMembers.map((value, index) => (
                 <div style={{ display: "inline-block" }}>
                     <Card sx={{ maxWidth: 345 }}>
                         <CardActionArea>
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image="https://i1.wp.com/media.premiumtimesng.com/wp-content/files/2020/04/Tom-and-Jerry-e1587475883217.jpg?resize=800%2C570&ssl=1"
-                                alt=""
+                                image={value["Profile Pic"]}
+                                alt={value["Name"]}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    {name}
+                                    {value["Name"]}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    {value["Description"]}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
