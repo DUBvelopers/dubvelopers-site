@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
+  font-family: 'Poppins', sans-serif;
   transition: 0.3s;
   scroll-behavior: smooth;
 }
