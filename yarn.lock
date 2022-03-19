@@ -2129,13 +2129,6 @@
   "resolved" "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.4.tgz"
   "version" "1.2.4"
 
-"@types/react-dom@>=17.0.0":
-  "integrity" "sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q=="
-  "resolved" "https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.11.tgz"
-  "version" "17.0.11"
-  dependencies:
-    "@types/react" "*"
-
 "@types/react-is@^16.7.1 || ^17.0.0":
   "integrity" "sha512-aBTIWg1emtu95bLTLx0cpkxwGW3ueZv71nE2YFBpL8k/z5czEW8yYpOo8Dp+UUAFAtKwNaOsh/ioSeQnWlZcfw=="
   "resolved" "https://registry.npmjs.org/@types/react-is/-/react-is-17.0.3.tgz"
@@ -4068,6 +4061,11 @@
   "integrity" "sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q=="
   "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-10.0.0.tgz"
   "version" "10.0.0"
+
+"dotenv@^16.0.0":
+  "integrity" "sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.0.tgz"
+  "version" "16.0.0"
 
 "duplexer@^0.1.2":
   "integrity" "sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg=="
@@ -9013,11 +9011,6 @@
   "version" "3.1.5"
   dependencies:
     "is-typedarray" "^1.0.0"
-
-"typescript@^3.2.1 || ^4", "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
-  "integrity" "sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA=="
-  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.5.5.tgz"
-  "version" "4.5.5"
 
 "unbox-primitive@^1.0.1":
   "integrity" "sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw=="
