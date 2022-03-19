@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <section>
-                <Row className="row">
+                <Row className="r">
                     <Col>
                         <h1>DUBvelopers</h1>
                         <p>Registered student organization at the <b>University of Washington</b> providing
@@ -31,7 +31,7 @@ const Home = () => {
             </section>
 
             <section className="content">
-                <Row className="row">
+                <Row className="r">
                     <Col>
                         <img src={require("./images/header-img.png")} alt="Img"/> 
                     </Col>
@@ -44,7 +44,7 @@ const Home = () => {
                     </Col>
                 </Row>
 
-                <Row className="row">
+                <Row className="r">
                     <Col>
                         <h1>Development</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
@@ -63,7 +63,7 @@ const Home = () => {
                     iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
                     eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
 
-                <Row className="row">
+                <Row className="r">
                     <Col className="container">
                         <h4>Community</h4>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus
