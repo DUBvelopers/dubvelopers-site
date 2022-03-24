@@ -24,16 +24,16 @@ const Home = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col>
-                        <img src={require("./images/header-img.png")} alt="Img"/>
+                    <Col className="img">
+                        <img src={require("./images/header.png")} alt="Img"/>
                     </Col>
                 </Row>
             </section>
 
             <section className="content">
                 <Row className="r">
-                    <Col>
-                        <img src={require("./images/header-img.png")} alt="Img"/> 
+                    <Col className="img">
+                        <img src={require("./images/design.png")} alt="Img"/> 
                     </Col>
                     <Col>
                         <h1>Design</h1>
@@ -52,8 +52,8 @@ const Home = () => {
                             veritatis et quasi architecto beatae vitae dicta.</p>
                         <a href="https://localhost:3000">Join us in developing &#8594;</a>
                     </Col>
-                    <Col>
-                        <img src={require("./images/header-img.png")} alt="Img"/>
+                    <Col className="img">
+                        <img src={require("./images/coding.png")} alt="Img"/>
                     </Col>
                 </Row>
             </section>
@@ -68,19 +68,19 @@ const Home = () => {
                         <h4>Community</h4>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus
                             qui blanditiis praesentium.</p>
-                        <img src={require("./images/placeholder-img.png")} alt="Img"/>
+                        <img src={require("./images/community.png")} alt="Img"/>
                     </Col>
                     <Col className="container">
                         <h4>Service</h4>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus
                             qui blanditiis praesentium.</p>
-                        <img src={require("./images/placeholder-img.png")} alt="Img"/>
+                        <img src={require("./images/service.png")} alt="Img"/>
                     </Col>
                     <Col className="container">
                         <h4>Learning</h4>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus
                             qui blanditiis praesentium.</p>
-                        <img src={require("./images/placeholder-img.png")} alt="Img"/>
+                        <img src={require("./images/learning.png")} alt="Img"/>
                     </Col>
                 </Row>
             </section>

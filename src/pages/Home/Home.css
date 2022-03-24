@@ -61,3 +61,7 @@ button:hover, a:hover {
 .container h4, .container p {
     color: #1A1B1F;
 }
+
+.img {
+    text-align: center;
+}

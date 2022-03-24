@@ -7,10 +7,14 @@ const Footer = () => {
         <section className="footer">
             <p>Connect with us <span style={{color: "red"}}>&#10084;</span></p>
             <div className="socials">
-                <a href="https://github.com/DUBvelopers-UW"><FaGithub/></a>
-                <a href="https://discord.gg/FNgd38xhtf"><FaDiscord/></a>
-                <a href="https://www.instagram.com/dubvelopers_uw/"><FaInstagram/></a>
+                <a href="https://github.com/DUBvelopers-UW"target="_blank" rel="noreferrer" ><FaGithub/></a>
+                <a href="https://discord.gg/FNgd38xhtf"target="_blank" rel="noreferrer" ><FaDiscord/></a>
+                <a href="https://www.instagram.com/dubvelopers_uw/"target="_blank" rel="noreferrer" ><FaInstagram/></a>
             </div>
+            <br/>
+            <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer" title="learn icons">
+                Vector icons created by Freepik - Flaticon
+            </a>
         </section>
     );
 }
