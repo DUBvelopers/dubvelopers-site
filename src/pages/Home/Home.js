@@ -14,13 +14,15 @@ const Home = () => {
                             a technical foundation for students through web development
                             and design curriculum and real world projects.</p>
                         <Row>
-                            <Col>
+                            {/*<Col>
                                 <h4>Organizations ...</h4>
                                 <button className="button1">Request a website</button>
-                            </Col>
+                            </Col>*/}
                             <Col>
                                 <h4>Students ...</h4>
-                                <button className="button2">Join our community</button>
+                                <a href="https://discord.gg/FNgd38xhtf" target="_blank" rel="noreferrer">
+                                    <button className="button2" href="https://discord.gg/FNgd38xhtf">Join our community</button>
+                                </a>
                             </Col>
                         </Row>
                     </Col>
@@ -40,7 +42,7 @@ const Home = () => {
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
                             totam rem aperiam, eaque ipsa quae ab illo inventore 
                             veritatis et quasi architecto beatae vitae dicta.</p>
-                        <a href="https://localhost:3000">Join us in designing &#8594;</a>
+                        <a href="https://discord.gg/FNgd38xhtf" target="_blank" rel="noreferrer">Join us in designing &#8594;</a>
                     </Col>
                 </Row>
 
@@ -50,7 +52,7 @@ const Home = () => {
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
                             totam rem aperiam, eaque ipsa quae ab illo inventore 
                             veritatis et quasi architecto beatae vitae dicta.</p>
-                        <a href="https://localhost:3000">Join us in developing &#8594;</a>
+                        <a href="https://discord.gg/FNgd38xhtf" target="_blank" rel="noreferrer">Join us in developing &#8594;</a>
                     </Col>
                     <Col className="img">
                         <img src={require("./images/coding.png")} alt="Img"/>

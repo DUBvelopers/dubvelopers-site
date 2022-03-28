@@ -27,7 +27,7 @@ const Contact = () => {
     const handleSubmit = event => {
         event.preventDefault();        
 
-        emailjs.sendForm('', '', event.target, '')
+        emailjs.sendForm("service_l6y2cjv", "template_1tq4beb", event.target, "gowIH7P83sDSmGBpM")
             .then((result) => {
                 alert('Your message has been received. Thank you.');
                 setName("");
@@ -55,8 +55,6 @@ const Contact = () => {
                             <FormLabel>Name</FormLabel>
                             <FormControl
                                 name="from_name"
-                                /*size="lg"*/
-                                type="from_name"
                                 value={name}
                                 onChange={e => setName(e.target.value)}
                                 className={"form-input"}
@@ -68,8 +66,6 @@ const Contact = () => {
                             <FormLabel>Email</FormLabel>
                             <FormControl
                                 name="reply_to"
-                                /*size="lg"*/
-                                type="reply_to"
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
                                 className={"form-input"}
