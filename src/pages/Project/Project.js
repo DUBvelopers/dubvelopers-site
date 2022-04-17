@@ -1,11 +1,12 @@
 import React from "react";
-import Card from '@mui/material/Card';
+// import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import useGoogleSheets from 'use-google-sheets';
-
+import { Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 import Footer from "../Footer/Footer";
 import "./Project.css";
 
@@ -33,41 +34,26 @@ const Project = () => {
         <>
             <section >
                 <h3>Projects</h3>
-                {projectData.map((value, index) => (
-                    <div class="cardClass" style={{ display: "inline-block" }}>
-                        <Card class="cardStyle">
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image={value["Picture URL"]}
-                                    alt={value["Project Name"]}
-                                />
-                                <CardContent class="cardContent">
-                                    <Typography variant="h5">
-                                        <p class="textStyle">{index + 1}. {value["Project Name"]}</p>
+                <Row xs={1} md={3} className="g-4">
+                    {projectData.map((value, index) => (
+                        <Col>
+                        
+                            <Card id="cardStyle">
+                                <Card.Img style={{ height: "50" }} variant="top" src={value["Picture URL"].replace("open?", "uc?export=view&")} />
+                                <Card.Body>
+                                    <Card.Title>{value["Project Name"]}</Card.Title>
+                                    <Card.Subtitle>{value["Group Type"]}</Card.Subtitle>
+                                    <Card.Text>{value["Leads"].split(", ").map((val, i) => (
+                                        <li>{val}</li>
+                                    ))}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                    
+                        </Col>
 
-                                    </Typography>
 
-                                    <Typography >
-                                        <p class="textStyle2">{value["Group Type"]}</p>
-                                    </Typography>
-
-                                    <Typography variant="body2" color="text.secondary" class="textStyle3">
-                                        {value["Leads"].split(", ").map((val, i) => (
-                                            <li>{val}</li>
-                                        ))}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Button class="btnColor" size="medium" color="primary">
-                                    <a href={value["Project URL"]}>View Project</a>
-                                </Button>
-                            </CardActions>
-                        </Card>
-                    </div>
-                ))}
+                    ))}
+                </Row>
             </section>
 
             <Footer />
