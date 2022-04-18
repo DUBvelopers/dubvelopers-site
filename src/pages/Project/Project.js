@@ -32,7 +32,7 @@ const Project = () => {
 
     return (
         <>
-            <section >
+            <section id="projects">
                 <h3>Projects</h3>
                 <Row xs={1} md={3} className="g-4">
                     {projectData.map((value, index) => (

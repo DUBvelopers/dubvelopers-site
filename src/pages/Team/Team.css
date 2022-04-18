@@ -1,7 +1,5 @@
-section {
-    padding: 10vh 10vw;
-    color: #FBF7ED;
-    background-color: #004C3F;
+#team {
+    text-align: center;
 }
 
 section p, section h4 {
@@ -60,12 +58,6 @@ button:hover, a:hover {
 
 .container h4, .container p {
     color: #1A1B1F;
-}
-
-section {
-    text-align: center;
-    padding-top: 0;
-    padding-top: 20px;
 }
 
 .cardClass {

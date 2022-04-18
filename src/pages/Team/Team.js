@@ -45,7 +45,7 @@ const Team = () => {
 
     return (
         <>
-            <section>
+            <section id="team">
                 <h3>Our Team</h3>
                 <Row xs={1} md={3} className="g-4">
                     {teamMembers.map((value, index) => (
