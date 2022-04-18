@@ -8,6 +8,7 @@ import {
 import Home from "./pages/Home/Home";
 import Team from "./pages/Team/Team";
 import Project from "./pages/Project/Project";
+import Contact from "./pages/Contact/Contact";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,15 +16,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
-      <ul className="navbar">
+      <ul className="navBar">
         <li>
-          <NavLink exact to="/" className="link">Home</NavLink>
+          <NavLink exact to="/" id="home"><img src={require("./dubvelopers-logo.png")} alt="Logo"/></NavLink>
         </li>
         <li>
-          <NavLink to="/team" className="link">Our Team</NavLink>
+          <NavLink exact to="/team" className="link" activeClassName>Our Team</NavLink>
         </li>
         <li>
-          <NavLink to="/projects" className="link">Projects</NavLink>
+          <NavLink to="/projects" className="link" activeClassName>Projects</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" className="link" activeClassName>Contact Us</NavLink>
         </li>
       </ul>
         
@@ -31,6 +35,7 @@ function App() {
         <Route exact path="/" element={<Home/>}/>
         <Route path="/team" element={<Team/>}/>
         <Route path="/projects" element={<Project/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>
   );

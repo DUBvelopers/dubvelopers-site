@@ -1,0 +1,40 @@
+.contact {
+    padding: 10vh 10vw;
+    color: #FBF7ED;
+    background-color: #004C3F;
+}
+
+.contact h1 {
+    margin-bottom: 5vh;
+}
+
+.contact .col {
+    margin: 0 3vw;
+}
+
+.teamLink {
+    color: #FBF7ED !important;
+    font-weight: bold;
+    text-decoration: underline !important;
+}
+
+.form-input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: #f1f1f1;
+}
+
+.form-input-message {
+    height: 15vh;
+    padding-top: 10px;
+}
+
+#send-btn {
+    border-radius: 4px;
+    background-color: #FBF7ED;
+    color: #004C3F;
+    transition: 0.3s;
+}
