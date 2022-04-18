@@ -1,64 +1,64 @@
 import React from "react";
-import Card from '@mui/material/Card';
+// import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import useGoogleSheets from 'use-google-sheets';
+import { Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Footer from "../Footer/Footer";
+import "./Project.css";
+
 
 const Project = () => {
-  const { data, loading, error } = useGoogleSheets({
-    apiKey: process.env.REACT_APP_API_KEY,
-    sheetId: process.env.REACT_APP_SHEET_ID,
-    sheetsNames: ['Projects'],
-  });
+    const { data, loading, error } = useGoogleSheets({
+        apiKey: process.env.REACT_APP_API_KEY,
+        sheetId: process.env.REACT_APP_SHEET_ID,
+        sheetsNames: ['Projects'],
+    });
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+    if (loading) {
+        return <div>Loading...</div>;
+    }
 
-  if (error) {
-    return <div>Error!</div>;
-  }
+    if (error) {
+        return <div>Error!</div>;
+    }
 
-  const projectData = data[0].data;
-  console.log(projectData);
-  console.log(projectData[0]["Project Name"]);
+    const projectData = data[0].data;
+    console.log(projectData);
+    console.log(projectData[0]["Project Name"]);
 
-  return (
-    <div style={{ textAlign: "center" }}>
-        <h1>Projects</h1>
-        {projectData.map((value, index) => (
-            <div style={{ display: "inline-block" }}>
-                <Card sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
-                        <CardMedia
-                            component="img"
-                            height="140"
-                            image={value["Picture URL"]}
-                            alt={value["Project Name"]}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                <a href={value["Project URL"]}>{value["Project Name"]}</a>
-                            </Typography>
-                            
-                            <Typography variant="body2" color="text.secondary">
-                                    {value["Leads"]}
-                            </Typography>
-                                                
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Button size="small" color="primary">
-                            {index}
-                        </Button>
-                    </CardActions>
-                </Card>
-            </div>
-        ))}
-    </div>
-);
+    return (
+        <>
+            <section >
+                <h3>Projects</h3>
+                <Row xs={1} md={3} className="g-4">
+                    {projectData.map((value, index) => (
+                        <Col>
+                        
+                            <Card id="cardStyle">
+                                <Card.Img style={{ height: "50" }} variant="top" src={value["Picture URL"].replace("open?", "uc?export=view&")} />
+                                <Card.Body>
+                                    <Card.Title>{value["Project Name"]}</Card.Title>
+                                    <Card.Subtitle>{value["Group Type"]}</Card.Subtitle>
+                                    <Card.Text>{value["Leads"].split(", ").map((val, i) => (
+                                        <li>{val}</li>
+                                    ))}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                    
+                        </Col>
+
+
+                    ))}
+                </Row>
+            </section>
+
+            <Footer />
+        </>
+    );
 };
 
 export default Project
