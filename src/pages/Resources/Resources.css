@@ -1,0 +1,46 @@
+#resources {
+    padding-bottom: 20vh;
+}
+
+#coding, #design {
+    margin-bottom: 15vh;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sources {
+    text-align: center;
+}
+
+.resource {
+    padding: 10px 5px;
+    border-bottom: 2px solid #f1f1f1;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resource button {
+    border-radius: 4px;
+    background-color: #FBF7ED;
+    color: #004C3F;
+    transition: 0.3s;
+}
+
+.text {
+    flex-direction: column;
+    text-align: left;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
