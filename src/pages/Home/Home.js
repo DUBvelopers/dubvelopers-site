@@ -10,7 +10,7 @@ const Home = () => {
                 <Row className="r">
                     <Col>
                         <h1>DUBvelopers</h1>
-                        <p>DUBvelopers is a web development and web design RSO at the <strong>University of Washington Seattle<\strong>. 
+                        <p>DUBvelopers is a web development and web design RSO at the <strong>University of Washington Seattle</strong>. 
                             We provide a technical foundation for students through our web development and design curriculum, 
                             in order to develop their skills and eventually work on projects for underserved
                             communities and organizations throughout Seattle.
