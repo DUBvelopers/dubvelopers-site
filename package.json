@@ -2,6 +2,7 @@
   "name": "dubvelopers-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dubvelopersuw.org",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.8.1",
@@ -36,6 +37,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
