@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home";
 import Team from "./pages/Team/Team";
 import Project from "./pages/Project/Project";
 import Contact from "./pages/Contact/Contact";
+import Resources from "./pages/Resources/Resources";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,6 +28,9 @@ function App() {
           <NavLink to="/projects" className="link" activeClassName>Projects</NavLink>
         </li>
         <li>
+          <NavLink to="/resources" className="link" activeClassName>Resources</NavLink>
+        </li>
+        <li>
           <NavLink to="/contact" className="link" activeClassName>Contact Us</NavLink>
         </li>
       </ul>
@@ -35,6 +39,7 @@ function App() {
         <Route exact path="/" element={<Home/>}/>
         <Route path="/team" element={<Team/>}/>
         <Route path="/projects" element={<Project/>}/>
+        <Route path="/resources" element={<Resources/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>
