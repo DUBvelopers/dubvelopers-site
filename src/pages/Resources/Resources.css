@@ -44,3 +44,12 @@
 .arrow:hover {
     opacity: 0.7;
 }
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons a {
+    margin: 0px 10px;
+}
