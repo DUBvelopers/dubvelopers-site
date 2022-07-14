@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,6 +8,7 @@ import useGoogleSheets from 'use-google-sheets';
 import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Footer from "../Footer/Footer";
+import Collapse from 'react-bootstrap/Collapse';
 import "./Project.css";
 
 
@@ -37,18 +38,29 @@ const Project = () => {
                 <Row xs={1} md={3} className="g-4">
                     {projectData.map((value, index) => (
                         <Col>
-                        
+
                             <Card id="cardStyle">
-                                <Card.Img style={{ height: "50" }} variant="top" src={value["Picture URL"].replace("open?", "uc?export=view&")} />
+                                <Card.Img style={{ height: "50" }} className="profImg" variant="top" src={value["Picture URL"].replace("open?", "uc?export=view&")} />
                                 <Card.Body>
                                     <Card.Title>{value["Project Name"]}</Card.Title>
                                     <Card.Subtitle>{value["Group Type"]}</Card.Subtitle>
-                                    <Card.Text>{value["Leads"].split(", ").map((val, i) => (
+
+                                    <details>
+                                        <summary className="subsubTitle">Coding Members</summary>
+                                        <Card.Text>{value["Coding Members"].split(", ").map((val, i) => (
+                                            <li>{val}</li>
+                                        ))}</Card.Text>
+                                    </details>
+                                    
+                                    <details>
+                                    <summary className="subsubTitle">Design Members</summary>
+                                    <Card.Text>{value["Design Members"].split(", ").map((val, i) => (
                                         <li>{val}</li>
                                     ))}</Card.Text>
+                                    </details>
                                 </Card.Body>
                             </Card>
-                    
+
                         </Col>
 
 

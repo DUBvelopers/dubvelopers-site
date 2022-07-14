@@ -51,7 +51,7 @@ const Team = () => {
                     {teamMembers.map((value, index) => (
                         <Col>
                             <Card id="cardStyle">
-                                <Card.Img variant="top" src={value["Profile Picture"].replace("open?", "uc?export=view&")} />
+                                <Card.Img variant="top" className="profImg" src={value["Profile Picture"].replace("open?", "uc?export=view&")} />
                                 <Card.Body>
                                     <Card.Title onClick={() => externalWebsite(value["Linkedin Profile/GitHub Profile/Personal Website"])}>{value["Name"]}</Card.Title>
                                     <Card.Subtitle>{value["Role"]}</Card.Subtitle>

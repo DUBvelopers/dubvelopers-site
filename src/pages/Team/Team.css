@@ -86,3 +86,8 @@ button:hover, a:hover {
     margin-bottom: 0;
 }
 
+.profImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
