@@ -92,3 +92,11 @@ button:hover, a:hover {
     margin-top: 10px;
     text-shadow: 1px 1px 3px white;
 }
+
+.linkBtn {
+    margin-top: 7px;
+}
+
+.listStudents {
+    margin-left: 20px; 
+}

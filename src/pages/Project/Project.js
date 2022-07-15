@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Route } from 'react-router-dom';
 // import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,6 +11,7 @@ import Card from "react-bootstrap/Card";
 import Footer from "../Footer/Footer";
 import Collapse from 'react-bootstrap/Collapse';
 import "./Project.css";
+import { FaCrown } from "react-icons/fa";
 
 
 const Project = () => {
@@ -47,17 +49,27 @@ const Project = () => {
 
                                     <details>
                                         <summary className="subsubTitle">Coding Members</summary>
-                                        <Card.Text>{value["Coding Members"].split(", ").map((val, i) => (
-                                            <li>{val}</li>
+                                        <Card.Text>{value["Coding Leads"].split(", ").map((val, i) => (
+                                            <li className="listStudents">{val} <FaCrown /></li>
+                                        ))}
+                                        
+                                        {value["Coding Members"].split(", ").map((val, i) => (
+                                            <li className="listStudents">{val}</li>
                                         ))}</Card.Text>
                                     </details>
-                                    
+
                                     <details>
-                                    <summary className="subsubTitle">Design Members</summary>
-                                    <Card.Text>{value["Design Members"].split(", ").map((val, i) => (
-                                        <li>{val}</li>
-                                    ))}</Card.Text>
+                                        <summary className="subsubTitle">Design Members</summary>
+                                        <Card.Text>{value["Design Leads"].split(", ").map((val, i) => (
+                                            <li className="listStudents">{val} <FaCrown /></li>
+                                        ))}
+                                        
+                                        {value["Design Members"].split(", ").map((val, i) => (
+                                            <li className="listStudents">{val}</li>
+                                        ))}</Card.Text>
                                     </details>
+
+                                    <a href={value["Project URL"]}><Card.Text className="linkBtn">View Project</Card.Text></a>
                                 </Card.Body>
                             </Card>
 
