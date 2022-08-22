@@ -10,6 +10,7 @@
 
 .socials {
     display: inline-flex;
+    margin-bottom: 5vh;
 }
 
 .socials a {
