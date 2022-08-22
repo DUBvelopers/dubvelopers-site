@@ -1,27 +1,14 @@
 .navBar {
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-  align-items: center;
   background-color: #195D50;
-  width: 100%;
   padding: 20px;
-  margin: 0;
 }
 
 .link {
   color: white !important;
-  float: right;
-  margin: 0 2vh;
+  margin: 0 1.5vw;
   font-size: 1.0em;
 }
 
 .active {
   text-decoration: underline !important;
-}
-
-#home {
-  position: absolute;
-  left: 0;
-  top: 0;
 }
