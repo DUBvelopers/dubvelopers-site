@@ -48,18 +48,6 @@ button:hover, a:hover {
     align-items: center;
 }
 
-.container {
-    padding: 20px 30px;
-    background-color: #FBF7ED;
-    box-shadow: 0px 2px 4px -2px #FBF7ED, 0px 4px 4px -2px #FBF7ED;
-    border-radius: 16px;
-    margin: 0 2vw !important;
-}
-
-.container h4, .container p {
-    color: #1A1B1F;
-}
-
 .cardClass {
     padding: 20px;
     width: 18rem;

@@ -65,3 +65,24 @@ button:hover, a:hover {
 .img {
     text-align: center;
 }
+
+/*For phone screens*/
+@media screen and (max-width: 700px) {
+    .r {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    section {
+        padding: 5vh 8vw;
+    }
+
+    .container {
+        margin: 2vh 0 !important;
+    }
+}
