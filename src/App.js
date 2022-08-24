@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <Navbar className="navBar" collapseOnSelect expand="sm">
-        <Navbar.Brand href="/"><img src={require("./dubvelopers-logo.png")} alt="Logo"/></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={require("./dubvelopers-logo.png")} alt="Logo"/>DUBvelopers</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>

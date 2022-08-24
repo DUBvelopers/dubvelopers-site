@@ -3,6 +3,11 @@
   padding: 20px;
 }
 
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
 .link {
   color: white !important;
   margin: 0 1.5vw;
