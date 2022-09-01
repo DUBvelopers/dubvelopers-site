@@ -47,29 +47,7 @@ const Project = () => {
                                     <Card.Title>{value["Project Name"]}</Card.Title>
                                     <Card.Subtitle>{value["Group Type"]}</Card.Subtitle>
 
-                                    <details>
-                                        <summary className="subsubTitle">Coding Members</summary>
-                                        <Card.Text>{value["Coding Leads"].split(", ").map((val, i) => (
-                                            <li className="listStudents">{val} <FaCrown /></li>
-                                        ))}
-                                        
-                                        {value["Coding Members"].split(", ").map((val, i) => (
-                                            <li className="listStudents">{val}</li>
-                                        ))}</Card.Text>
-                                    </details>
-
-                                    <details>
-                                        <summary className="subsubTitle">Design Members</summary>
-                                        <Card.Text>{value["Design Leads"].split(", ").map((val, i) => (
-                                            <li className="listStudents">{val} <FaCrown /></li>
-                                        ))}
-                                        
-                                        {value["Design Members"].split(", ").map((val, i) => (
-                                            <li className="listStudents">{val}</li>
-                                        ))}</Card.Text>
-                                    </details>
-
-                                    <a href={value["Project URL"]}><Card.Text className="linkBtn">View Project</Card.Text></a>
+                                    <a href={"/project/" + index}><Card.Text className="linkBtn">View More Details</Card.Text></a>
                                 </Card.Body>
                             </Card>
 

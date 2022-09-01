@@ -10,6 +10,7 @@ import Team from "./pages/Team/Team";
 import Project from "./pages/Project/Project";
 import Contact from "./pages/Contact/Contact";
 import Resources from "./pages/Resources/Resources";
+import IndProject from "./pages/IndProject/IndProject";
 
 import { Nav, Navbar } from "react-bootstrap";
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/projects" element={<Project/>}/>
         <Route path="/resources" element={<Resources/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/project/:projectId" element={<IndProject/>}/>
       </Routes>
     </Router>
   );
