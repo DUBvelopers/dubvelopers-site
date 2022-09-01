@@ -1,0 +1,56 @@
+.project {
+    padding: 10vh 10vw;
+    color: #FBF7ED;
+    background-color: #004C3F;
+    text-align: center;
+    transition: 0.1s;
+}
+
+.left {
+    text-align: left;
+}
+
+.memberType {
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.student {
+    margin-bottom: 10px;
+}
+
+.memberImg {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.description {
+    text-align: justify;
+    margin: 40px 0;
+}
+
+.view {
+    padding: 8px 12px;
+}
+
+.projectImg {
+    width: 35vw;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+    .projectImg {
+        width: 80vw;
+        max-height: none;
+        margin-top: 30px;
+    }
+}

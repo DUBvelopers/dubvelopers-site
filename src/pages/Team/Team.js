@@ -31,7 +31,7 @@ const Team = () => {
     async function callFunction(arr, index, size) {
         let arr2 = new Array(size);
         for (let i = 0; i < arr.length; i++) {
-            if (i == index) {
+            if (i === index) {
                 arr2[i] = !arr[i];
             }
         }
@@ -47,7 +47,7 @@ const Team = () => {
         <>
             <section id="team">
                 <h3>Our Team</h3>
-                <Row xs={1} md={3} className="g-4">
+                <Row xs={1} md={3} className="team g-4">
                     {teamMembers.map((value, index) => (
                         <Col>
                             <Card id="cardStyle">

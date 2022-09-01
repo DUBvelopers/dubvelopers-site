@@ -1,18 +1,9 @@
-import React, { useState } from "react";
-import { Route } from 'react-router-dom';
-// import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import React from "react";
 import useGoogleSheets from 'use-google-sheets';
 import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Footer from "../Footer/Footer";
-import Collapse from 'react-bootstrap/Collapse';
 import "./Project.css";
-import { FaCrown } from "react-icons/fa";
-
 
 const Project = () => {
     const { data, loading, error } = useGoogleSheets({
