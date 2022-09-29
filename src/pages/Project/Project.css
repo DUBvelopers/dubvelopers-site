@@ -85,8 +85,15 @@ button:hover, a:hover {
     text-shadow: 1px 1px 3px white;
 }
 
+.tagline {
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
 .linkBtn {
-    margin-top: 7px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
 }
 
 .listStudents {

@@ -37,6 +37,8 @@ const Project = () => {
                                 <Card.Body>
                                     <Card.Title>{value["Project Name"]}</Card.Title>
                                     <Card.Subtitle>{value["Group Type"]}</Card.Subtitle>
+                                    <br/>
+                                    <Card.Subtitle className="tagline">"{value["Tagline"]}"</Card.Subtitle>
 
                                     <a href={"/project/" + index}><Card.Text className="linkBtn">View More Details</Card.Text></a>
                                 </Card.Body>
