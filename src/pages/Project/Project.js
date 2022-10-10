@@ -40,7 +40,7 @@ const Project = () => {
                                     <br/>
                                     <Card.Subtitle className="tagline">"{value["Tagline"]}"</Card.Subtitle>
 
-                                    <a href={"/project/" + index}><Card.Text className="linkBtn">View More Details</Card.Text></a>
+                                    <a href={"/#/project/" + index}><Card.Text className="linkBtn">View More Details</Card.Text></a>
                                 </Card.Body>
                             </Card>
 

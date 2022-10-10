@@ -2,7 +2,8 @@ import {
   BrowserRouter as Router,
   Routes,
   NavLink,
-  Route
+  Route, 
+  HashRouter
 } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
@@ -19,7 +20,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar className="navBar" collapseOnSelect expand="sm">
         <Navbar.Brand href="/"><img src={require("./dubvelopers-logo.png")} alt="Logo"/>DUBvelopers</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -41,7 +42,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/project/:projectId" element={<IndProject/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
