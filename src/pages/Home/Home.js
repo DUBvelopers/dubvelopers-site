@@ -26,7 +26,7 @@ const Home = () => {
                                     <button className="button2" href="https://discord.gg/FNgd38xhtf">Join our community</button>
                                 </a>
                             </Col>*/}
-                            <h4>📝Note: we will be opening member applications in the fall (2022), so stay tuned for more info on how to join ;)</h4>
+                            <h4>Appllications are currently CLOSED. Make sure to be on the  lookout when applications open next year!</h4>
                         </Row>
                     </Col>
                     <Col className="img">
