@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
     Row,
@@ -19,6 +19,10 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+    useEffect(() => {
+        emailjs.init("2d7h9LpYS3ghFxVw7");
+    }, []);
+
     const validateForm = () => {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return name.length >= 1 && regex.test(email.toLowerCase()) && message.length >= 1;
@@ -27,13 +31,14 @@ const Contact = () => {
     const handleSubmit = event => {
         event.preventDefault();        
 
-        emailjs.sendForm("service_l6y2cjv", "template_1tq4beb", event.target, "gowIH7P83sDSmGBpM")
+        emailjs.sendForm("service_fbnf9kf", "template_s90hch5", event.target)
             .then((result) => {
                 alert('Your message has been received. Thank you.');
                 setName("");
                 setEmail("");
                 setMessage("");
             }, (error) => {
+                console.log(error);
                 alert('An error occured. Please send your message again.');
             });
     }
